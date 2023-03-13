@@ -6,8 +6,8 @@ from janela_2_importacao_NFSe.importacao_janela2 import importar_notas_final
 from percorrer_pasta_xml.pasta_xml import navegar_pastas_xml_contratados as navegar_pasta_xml
 import pyautogui
 import os
-DT_inicial = '01112022'
-DT_final = '30112022'
+DT_inicial = '01022023'
+DT_final = '28022023'
 
 
 if __name__ == '__main__':
@@ -15,8 +15,8 @@ if __name__ == '__main__':
     conjunto_clientes = navegar_pasta_xml()
 
     if not not conjunto_clientes:
-        logar_unico()
-        acessar_modulo_fiscal()
+        # logar_unico()
+        # acessar_modulo_fiscal()
         acessar_modulo_importacao_municipal()
 
     for cliente in conjunto_clientes:
